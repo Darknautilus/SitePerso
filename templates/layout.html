@@ -70,11 +70,25 @@
   <div class="navbar-inner">
   	<div class="container">
     	<ul class="nav">
-      		<li class="active"><a href="#">Accueil</a></li>
-      		<li><a href="#">À propos</a></li>
+      		<li><a href="#">Haut de page</a></li>
+      		<li><a href="#apropos" data-toggle="modal" >À propos</a></li>
     	</ul>
     </div>
   </div>
+</div>
+<!-- Pop-up pour À propos -->
+<div id="apropos" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="aproposLabel" aria-hidden="true">
+	<div class="modal-header">
+    	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    	<h3 id="aproposLabel">À propos</h3>
+  	</div>
+  	<div class="modal-body">
+    	<p>Ce site a été entièrement réalisé à l'aide de <a href="http://twitter.github.com/bootstrap/index.html">Bootstrap</a>. Il s'agit du framework édité par Twitter et qui gère toute la partie graphique du site.</p>
+    	<p>Le backend est réalisé en PHP. Pour assurer la clarté du code et sa facilité de maintenance, j'utilise un framework PHP fait maison. Le code est disponible librement sur <a href="https://github.com/Darknautilus/PersoFramework">GitHub</a></p>
+  	</div>
+  	<div class="modal-footer">
+    	<button class="btn" data-dismiss="modal" aria-hidden="true">Fermer</button>
+  	</div>
 </div>
 </footer>
 
