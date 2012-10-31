@@ -13,15 +13,7 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 	
-	<style type="text/css">
-      .main {
-        padding-top: 60px;
-        padding-bottom: 40px;
-      }
-      .ancre{
-      	padding-top: 60px;
-      }
-    </style>
+	<link href="{{ css() }}/global.css" rel="stylesheet">
 	 
 	<title>{% block title %}{% endblock %} - Aurélien Bertron</title>
 </head>
@@ -33,7 +25,7 @@
 <script src="global.js"></script>
 
 <header>
-<div class="navbar navbar-fixed-top">
+<div class="navbar navbar-fixed-top navbar-inverse">
   <div class="navbar-inner">
   	<div class="container">
   		<a class="brand" href="#">Aurélien Bertron</a>
@@ -60,13 +52,13 @@
 </div>
 </header>
 
-<div class="main container">
+<div>
 {% block content %}
 {% endblock %}
 </div>
 
 <footer>
-<div class="navbar navbar-static-bottom">
+<div class="navbar navbar-static-bottom navbar-inverse">
   <div class="navbar-inner">
   	<div class="container">
     	<ul class="nav">
